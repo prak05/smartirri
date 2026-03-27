@@ -56,7 +56,7 @@ def get_weather_data(api_key, city="Thiruvananthapuram"):
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load("Farm_Irrigation_System.pkl")
+        model = joblib.load("src/models/Farm_Irrigation_System.pkl")
         return model
     except FileNotFoundError:
         return None
